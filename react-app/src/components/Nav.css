@@ -1,0 +1,64 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative; /* Add position relative to enable absolute positioning of dropdown */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+#nav-title {
+  font-style: italic;
+}
+
+.navbar-toggle img {
+  width: 45px;
+  height: 45px; /* Adjust height for better visibility */
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Adjust top position to be below the navbar */
+  left: 0;
+  z-index: 1000;
+  display: none;
+  min-width: 160px;
+  padding: 8px 0;
+  margin: 2px 0 0;
+  margin-left: 85%;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 20px; /* Adjust padding for better spacing */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
